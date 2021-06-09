@@ -36,7 +36,7 @@ class StorageHelp {
 	}
 
 	static getUserKey() {
-		return "CHILD_HEALTH_USERINFO"
+		return "USERINFO"
 	}
 	
 	static getInfo(key, callBack) {
