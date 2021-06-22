@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import App from './App'
-import HttpTool from './http/HttpTool.js'
-import Storage from './common/Storage.js'
-import HLTool from './common/HLTool.js'
+import {HttpTool,Storage,HLTool,DateUtils} from 'hl-utils'
 import MescrollBody from "@/components/mescroll-uni/mescroll-body.vue"
 import MescrollUni from "@/components/mescroll-uni/mescroll-uni.vue"
-import API from './http/API.js'
+import API from '@/http/API.js'
 import hlDatePicker from '@/pages/common/hlDatePickerView.vue'
 import hlPicker from '@/pages/common/hlPickerView.vue'
 import initModal from '@/store/modalStore.js'
@@ -17,6 +15,7 @@ Vue.prototype.$HttpTool = HttpTool;
 Vue.prototype.$Storage = Storage;
 Vue.prototype.$HLTool = HLTool;
 Vue.prototype.$HLAPI = API;
+Vue.prototype.$DateUtils = DateUtils;
 Vue.prototype.log = HLTool.log;
 
 Vue.component('mescroll-body', MescrollBody)

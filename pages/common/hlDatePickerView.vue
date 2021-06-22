@@ -30,7 +30,6 @@
 </template>
 
 <script>
-	import DateTool from '@/common/DateUtils.js'
 	
 	export default{
 		data(){
@@ -67,11 +66,11 @@
 			this.months = this.initDateAry(12);
 			
 			
-			this.days = this.initDateAry(DateTool.getOneMonthDays(year,month));
+			this.days = this.initDateAry(this.$DateUtils.getOneMonthDays(year,month));
 			this.hours = this.initDateAry(23,0);
 			this.minutes = this.initDateAry(59,0);
 			if (this.masDateStr) {
-				this.maxDate = DateTool.dateFromString(this.masDateStr);
+				this.maxDate = this.$DateUtils.dateFromString(this.masDateStr);
 				let maxY = this.maxDate.getFullYear();
 				let maxM = this.maxDate.getMonth() + 1;
 				let maxD = this.maxDate.getDate();
@@ -165,7 +164,7 @@
 					
 				}else{//改变对应日期数组
 				    
-					this.days = this.initDateAry(DateTool.getOneMonthDays(this.years[year],month + 1));
+					this.days = this.initDateAry(this.$DateUtils.getOneMonthDays(this.years[year],month + 1));
 					if (this.maxDate) {
 						let maxY = this.maxDate.getFullYear();
 						let maxM = this.maxDate.getMonth() + 1;
