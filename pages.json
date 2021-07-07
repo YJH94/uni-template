@@ -5,6 +5,12 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path": "pages/common/hlWebview",
+			"style": {
+				"navigationBarTitleText": "网页"
+			}
 		}
     ],
 	"globalStyle": {
