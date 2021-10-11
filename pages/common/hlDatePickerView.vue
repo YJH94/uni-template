@@ -272,7 +272,7 @@ picker-view {
 	}
 	.right {
 		margin-right: 32rpx;
-		color: $uni-color-primary-light;
+		color: $uni-color-primary;
 	}
 	.title {
 		color: #333333;
