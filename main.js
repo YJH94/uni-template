@@ -9,6 +9,7 @@ import hlPicker from '@/pages/common/hlPickerView.vue'
 import initModal from '@/store/modalStore.js'
 import hlModal from '@/pages/common/hlModal.vue'
 import Route from '@/router/index.js'
+import DeviceInfo from '@/common/DeviceInfo.js'
 initModal(Vue)
 
 Vue.config.productionTip = false
@@ -18,6 +19,7 @@ Vue.prototype.$HLTool = HLTool;
 Vue.prototype.$HLAPI = API;
 Vue.prototype.$HLRoute = Route;
 Vue.prototype.$DateUtils = DateUtils;
+Vue.prototype.$DeviceInfo = DeviceInfo;
 Vue.prototype.log = HLTool.log;
 
 Vue.component('mescroll-body', MescrollBody)
